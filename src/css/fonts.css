@@ -18,3 +18,10 @@
     font-weight: 700;
     font-style: normal;
     }
+
+@font-face {
+    font-family: 'Museo Moderno';
+    src: url('../fonts/MuseoModerno-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    }

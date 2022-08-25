@@ -1,0 +1,124 @@
+@media (max-width: 992px) {
+    .header {
+        padding: 0 30px;
+    }
+    .promo__wrapper {
+        padding: 0 30px;
+    }
+    .benefits__items {
+        padding: 0 30px;
+    }
+    .benefits__item {
+        padding: 0 10px;
+    }
+    .consultation {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .title_left {
+        font-size: 34px;
+        line-height: 34px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__official {
+        display: none;
+    }
+    .promo__header {
+        font-size: 35px;
+    }
+    .promo__subheader {
+        font-size: 23px;
+        margin-top: 0;
+    }
+    .benefits {
+        max-height: 650px;
+        &__items {
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+        &__item {
+            width: 250px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+    }
+    .title_left {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .consultation {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        min-height: 510px;
+        &__descr {
+            font-size: 19px;
+            line-height: 24px;
+        }
+    }
+    .carousel__inner {
+        max-width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        flex-wrap: wrap;
+        &__logo {
+            max-width: 80%;
+            margin-bottom: 25px;
+        }
+        &__contacts {
+            margin: 0 auto;
+        }
+    }
+    .promo {
+        padding-bottom: 0;
+        &__wrapper {
+            margin-top: 45px;
+            padding: 0 20px;
+        }
+        &__header {
+            text-align: center;
+            width: 100%;
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__subheader {
+            width: 100%;
+            text-align: center;
+        }
+        &__icons {
+            width: 100%;
+        }
+        &__icon {
+            width: 95px;
+        }
+    }
+    .button_main {
+        width: 280px;
+    }
+    .benefits {
+        padding: 35px 0 30px 0;
+        max-height: 900px;
+    }
+    .title_left {
+        text-align: center;
+        font-size: 22px;
+    }
+    .consultation {
+        padding-left: 10px;
+        &__descr {
+            text-align: center;
+        }
+        .feed-form {
+            margin: 36px auto 0 auto;
+        }
+    }
+
+}
