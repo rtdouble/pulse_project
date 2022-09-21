@@ -42,7 +42,7 @@ $(document).ready(function(){
 		$('.overlay, #consultation').fadeIn();
     });
 
-	$('.modal__close, .overlay').on('click', function() {
+	$('.modal__close').on('click', function() {
 		$('.overlay, #consultation, #order, #thanks').fadeOut();
 	});
 
@@ -52,4 +52,29 @@ $(document).ready(function(){
 			$('.overlay, #order').fadeIn();
 		});
 	});
+
+	function validateForm(form) {
+		$(form).validate({
+			rules: {
+				name: "required",
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				}			
+			},
+			messages: {
+				name: "Пожалуйста, напишите свое имя",
+				phone: "Пожалуйста, напишите свой номер телефона",
+				email: {
+				  required: "Пожалуйста, напишите свой имейл",
+				  email: "Ваш имейл адрес должен быть формата name@domain.com"
+				}
+			  }
+		});
+	}
+
+	validateForm('#main-form');
+	validateForm('#order form');
+	validateForm('#consultation form');
 });
