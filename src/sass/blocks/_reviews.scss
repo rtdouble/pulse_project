@@ -1,0 +1,32 @@
+.reviews {
+    padding-bottom: 50px;
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 60px 20px 0 20px;
+        &__img {
+            max-width: 169px;
+            margin-right: 60px;
+        }
+        &__name {
+            font-weight: 700;
+            font-size: 18px;
+        }
+        &__count {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 10px;
+            color: #646464;
+        }
+        &__text {
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            span {
+                font-family: "Museo Moderno";
+            }
+        }
+    }
+}
