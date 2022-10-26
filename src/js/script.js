@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+	new WOW().init();
+
     $('.carousel__inner').slick({
         speed: 1000,
         autoplay: true,
@@ -101,4 +104,15 @@ $(document).ready(function(){
 		});
 		return false;
 	});
+
+	// Smooth scroll and pageup
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
+
 });
